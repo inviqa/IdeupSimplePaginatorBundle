@@ -49,7 +49,6 @@ class Paginator
         $request = $this->RequestStack = $requestStack->getCurrentRequest();
 
         $paginatorId = $request->get('paginatorId');
-//        \Symfony\Component\VarDumper\VarDumper::dump( $request->get());die();
         $this->setFallbackValues();
 
         $page = (int)$request->get('page');
