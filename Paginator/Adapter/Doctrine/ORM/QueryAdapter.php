@@ -34,7 +34,6 @@ class QueryAdapter implements AdapterInterface {
         $paginate = new Paginator($this->query);
         $paginate->count();
         return (int) $paginate->count();
-//        return (int)Paginate::getTotalQueryResults($this->query);
     }
 
     /**
